@@ -1,0 +1,8 @@
+
+<!-- <div class="caja circle" *ngFor="let pais of paises" cdkDrag>{{pais.name}}</div> -->
+<!-- <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+    <li *ngFor="let paisAlt of paisesAlt" class="list-group-item" cdkDrag>{{paisAlt.name}}</li>
+</ul> -->
+<ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+    <li *ngFor="let pais of paises" class="list-group-item" cdkDrag>{{pais.name}}</li>
+</ul>
