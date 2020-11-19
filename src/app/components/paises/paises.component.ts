@@ -29,8 +29,10 @@ export class PaisesComponent implements OnInit {
     );
   }
 
-  drop(event: CdkDragDrop<Pais>){
+  drop(event: CdkDragDrop<Pais>) {
     console.log(event);
+    // Para persistir este cambio de desplzar un elemento
+    // dentro de un array es necesario hacer uso de la siguiente funcion
     moveItemInArray(this.paises, event.previousIndex, event.currentIndex);
   }
 
